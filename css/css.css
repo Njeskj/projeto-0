@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  z-index: 1;
+}
+  
+
+/* LOGO */
+.logo {
+  z-index: 10;
+position: fixed;
+ text-align: center;
+ margin-bottom: 20px;
+ width: 100%;
+ background-color: #0073e6;
+ padding: 20px;
+ border-bottom: 1px solid #333;
+}
+
+.logo img {
+  width: 200px; /* Tamanho inicial da logo */
+  transition: width 0.5s; /* Efeito de transição suave */
+}
+
+.content {
+  padding: 20px;
+  margin-top: 100px; /* Espaço para acomodar o header */
+}
+
+
+
+
+
+
+/* Seção Itens Pedido */
+.itens-skill-h2 {
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #263138;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+#itens {
+    /* display: flex; */
+    /* align-items: start; */
+    /* gap: 64px; */
+    padding: 150px 80px;
+  }
+  
+.item {
+    position: relative;
+  }
+  
+.item strong {
+    border: 2px solid #0073e6;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    padding: 24px;
+  }
+  
+.item h3 {
+  text-align: center;
+    border: 1px solid #0073e6;
+    border-radius: 5px 5px 5px 5px;
+    padding: 20px;
+    background-color: #0073e6;
+    color: #FFFFFF;
+  }
+
+.fa-circle-arrow-down {
+  float: right;
+}
+  
+.item .paragrafo {
+    border-right: 1px solid #0073e6;
+    border-bottom: 1px solid #0073e6;
+    border-left: 1px solid #0073e6;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 5px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .5s;
+    line-height: 150%;
+    margin-bottom: 5px;
+  }
+
+.item.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
+    padding-top: 24px;
+    padding-bottom: 5px;
+  }
+
+  .link {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.link-item button {
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 3px 6px;
+    cursor: pointer;
+}
+.skill-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+/* .projetos {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  width: 100%;
+} */
+
+
+.video {
+  position: relative;
+}
+
+#sliding-video {
+  position: absolute;
+  width: 320px; /* Largura do vídeo */
+  height: 240px; /* Altura do vídeo */
+}
+
+.footer {
+  /* Estilos para o rodapé */
+  background-color: #333; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+  padding: 10px;
+  text-align: center;
+  position: fixed; /* Fixa o rodapé na parte inferior */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Largura total da página */
+}
